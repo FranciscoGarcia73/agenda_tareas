@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="flex">
+        <form action="">
+            <h3>Entrada Agenda</h3>
+            <div class="marco">
+                <div>
+                    <label class="etiqueta color">Titulo</label>
+                    <input type="text" class="etiqueta" id="inputTitulo">
+                </div>
+                <div>
+                    <label class="etiqueta color">Prioridad</label>
+                    <select class="etiqueta" id="inputPrioridad">
+                        <option>Urgente</option>
+                        <option>Diaria</option>
+                        <option>Mensual</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" value="Crear Tarea" id="boton">
+            <input type="submit" value="Listar Tareas" id="botonList">
+            <div class="marco">
+                <div>
+                    <label class="etiqueta color">Prioridad a listar</label>
+                    <select class="etiqueta" id="pPrioridad">
+                        <option>Urgente</option>
+                        <option>Diaria</option>
+                        <option>Mensual</option>
+                    </select>
+                    <input type="submit" value="Listar Prioridad" id="botonListPrioridad">
+                </div>
+            </div>
+            <div class="marco">
+                <div>
+                    <label class="etiqueta color">idTarea a borrar</label>
+                    <input type="text" class="etiqueta" id="borrarId">
+                    <input type="submit" value="Borrar Tarea" id="botonBorrar">
+                </div>
+            </div>
+            <div class="marco">
+                <div>
+                    <label class="etiqueta color">Texto a buscar</label>
+                    <input type="text" class="etiqueta" id="buscarTexto">
+                    <input type="submit" value="Buscar Texto" id="botonBuscarTexto">
+                </div>
+            </div>
+        </form>
+        <div class="agenda folios">
+            <h3>Listado tareas</h3>
+            <ul id="listadoAgenda">
+
+            </ul>
+        </div>
+        <div class="listado folios">
+            <h3 id="encabezadoPrioridad">Listado tareas por prioridad</h3>
+            <ul id="listadoAgendaPri">
+
+            </ul>
+        </div>
+        <div class="listadoTexto folios">
+            <h3 id="encabezadoTexto">Listado tareas que contienen texto</h3>
+            <ul id="listadoAgendaTexto">
+
+            </ul>
+        </div>
+        <script src="main.js" type="module"></script>
+    </div>
+    </div>
+
+</body>
+
+</html>
